@@ -1,0 +1,94 @@
+.exp-title {
+	text-align: center;
+	font-family: 'Raleway Dots', 'Arial', sans-serif;
+}
+
+.exp {
+	margin-top: 2em;
+	h4 {
+		font-size: 80%;
+	}
+    h5 {
+    	font-size: 100%;
+    	color: $salmon;
+    	font-weight: 600;
+    }
+	p {
+		margin: 0;
+		line-height: 1.2;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.exp-logo-small {
+	margin-top: 1.25em;
+	width: 5em;
+	max-width: 45%;
+	height: 5em;
+	box-sizing: border-box;
+	border: 1px dotted $salmon;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+
+.exp-logo-big {
+	@extend .exp-logo-small;
+	max-width: 29%;
+}
+
+.os3 {
+	background-image: url('../images/os3.png');
+	background-size: 80%;
+}
+
+.coderslab {
+	background-image: url('../images/coderslab.png');
+	background-size: contain;
+}
+
+.hk {
+	background-image: url('../images/hk.png');
+	background-size: contain;
+}
+
+.havas {
+	background-image: url('../images/havas.jpg');
+	background-size: 80%;
+}
+
+.neuron {
+	background-image: url('../images/neuron.png');
+	background-size: 80%;
+}
+
+.uj {
+	background-image: url('../images/uj.png');
+	background-size: contain;
+}
+
+.nowodworek {
+	background-image: url('../images/nowodworek.png');
+	background-size: 80%;
+}
+
+.exp-description-small {
+	float: right;
+	text-align: left;
+	display: block;
+	width: 55%;
+	height: 7em;
+	font-size: 70%;
+	padding-left: 1em;
+	box-sizing: border-box;
+}
+
+.exp-description-big {
+	@extend .exp-description-small;
+	width: 71%;
+}

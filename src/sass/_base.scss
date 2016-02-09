@@ -1,3 +1,10 @@
+$pink: #CDB7C2;
+$taupe: #807178;
+$salmon: #CC6475;
+$royal: #803E49;
+$dark: #333333;
+$light: #CCCCCC;
+
 html,
 body,
 .content-wrapper {
@@ -5,6 +12,7 @@ body,
   height: 100%;
   font-family: 'Raleway', sans-serif;
   background-color: #fff;
+  color: $dark;
 }
 
 h1 {
@@ -19,9 +27,9 @@ h2, h3 {
 
 a {
   text-decoration: none;
-  color: #CC6475; //salmon
+  color: $salmon;
   &:hover {
-    color: #CDB7C2; //pink
+    color: $pink;
   }
 }
 
