@@ -1,0 +1,108 @@
+.navigation-handy {
+	position: fixed;
+	top: 15px;
+	left: 15px;
+	z-index: 1000;
+}
+
+
+.navigation-bubble {
+	display: block;
+	height: 5rem;
+	width: 5rem;
+	border-radius: 50%;
+	background-color: $salmon;
+	box-sizing: border-box;
+	position: relative;
+	padding: 2rem 1rem;
+	text-align: center;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.navigation-state {
+	display: block;
+	width: 3rem;
+	height: 3px;
+	margin: 3px auto;
+	background-color: #fff;
+	position: relative;
+	content: "";
+	cursor: pointer;
+	&:before,
+	&:after {
+		display: block;
+		width: 3rem;
+		height: 3px;
+		margin: 3px auto;
+		background-color: #fff;
+		position: relative;
+		content: "";
+		cursor: pointer;
+	}
+	&:before {
+		top: -6px;
+	}
+}
+
+.navigation-is-open {
+	background-color: transparent;
+	&:before {
+		top: 1px;
+		transform: rotate(45deg);
+	}
+	&:after {
+		top: -5px;
+		transform: rotate(-45deg);
+	}
+}
+
+
+.navigation-wrapper-visible {
+	display: block;
+	height: 100%;
+	width: 50%;
+	color: #fff;
+	background-color: $salmon;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-top-left-radius: 5em;
+	z-index: 99;
+	padding: 5% 10%;
+
+
+.navigation-main {
+	padding-left: 0;
+	li {
+		display: block;
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 200%;
+		margin: 4rem auto;
+	}
+	a {
+		color: #fff;
+		&:hover {
+			color: $dark;
+			text-decoration: none;
+		}
+	}
+}
+
+.navigation-social {
+	text-align: center;
+	padding-left: 0;
+	li {
+		display: inline-block;
+	}
+	i {
+		color: #fff;
+		margin: 0 2rem;
+		&:hover {
+			color: $dark;
+		}
+	}
+}
+}

@@ -1,10 +1,31 @@
 .exp-title {
+	margin-top: 4rem;
 	text-align: center;
 	font-family: 'Raleway Dots', 'Arial', sans-serif;
 }
 
 .exp {
-	margin-top: 2em;
+	margin-top: 4rem;
+}
+
+.exp-logo {
+	margin-left: 10%;
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin-top: 1rem;
+	box-sizing: border-box;
+	border: 1px dotted $salmon;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	&:hover {
+		transform: scale(1.2);
+		cursor: pointer;
+	}
+}
+
+.exp-description {
 	h4 {
 		font-size: 80%;
 	}
@@ -16,31 +37,10 @@
 	p {
 		margin: 0;
 		line-height: 1.2;
-	}
-	&:after {
-		clear: both;
+		font-size: 90%;
 	}
 }
 
-.exp-logo-small {
-	margin-top: 1.25em;
-	width: 5em;
-	max-width: 45%;
-	height: 5em;
-	box-sizing: border-box;
-	border: 1px dotted $salmon;
-	float: left;
-	background-repeat: no-repeat;
-	background-position: center;
-	&:hover {
-		transform: scale(1.2);
-	}
-}
-
-.exp-logo-big {
-	@extend .exp-logo-small;
-	max-width: 29%;
-}
 
 .os3 {
 	background-image: url('../images/os3.png');
@@ -49,7 +49,7 @@
 
 .coderslab {
 	background-image: url('../images/coderslab.png');
-	background-size: contain;
+	background-size: 90%;
 }
 
 .hk {
@@ -75,20 +75,6 @@
 .nowodworek {
 	background-image: url('../images/nowodworek.png');
 	background-size: 80%;
+	margin-bottom: 5rem;
 }
 
-.exp-description-small {
-	float: right;
-	text-align: left;
-	display: block;
-	width: 55%;
-	height: 7em;
-	font-size: 70%;
-	padding-left: 1em;
-	box-sizing: border-box;
-}
-
-.exp-description-big {
-	@extend .exp-description-small;
-	width: 71%;
-}
