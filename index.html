@@ -27,30 +27,28 @@
 </head>
 <body>
 
-    <div class="content-wrapper">
-
-        <nav class="navigation-handy">
-            <div class="navigation-bubble">
-            <span class="navigation-state"></span>
+    <nav class="navigation-handy">
+        <div class="navigation-bubble">
+        <span class="navigation-state"></span>
             <!-- navigation-is-open do dodania -->
-            </div>
-            <div class="navigation-wrapper is-not">
+        </div>
+        <div class="navigation-wrapper hidden">
                 <!-- navigation-wrapper-visible do dodania -->
-                <ul class="navigation-main">
-                    <li><a href="#introduction">home</a></li>
-                    <li><a href="#experience">experience</a></li>
-                    <li><a href="#skills">skills</a></li>                            
-                    <li><a href="#works">works</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-                <hr>
-                <ul class="navigation-social">
-                    <li><a href="https://github.com/olawar"><i class="mdi mdi-github-box"></i></a></li>
-                    <li><a href="https://linkedin.com/in/awarzecha"><i class="mdi mdi-linkedin-box"></i></a></li>
-                    <li><a href="https://twitter.com/ola_war"><i class="mdi mdi-twitter-box"></i></a></li>
-                </ul>                
-            </div>
-        </nav>
+            <ul class="navigation-main">
+                <li><a href="#introduction">home</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#skills">skills</a></li>                            
+                <li><a href="#works">works</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <hr>
+            <ul class="navigation-social">
+                <li><a href="https://github.com/olawar"><i class="mdi mdi-github-box"></i></a></li>
+                <li><a href="https://linkedin.com/in/awarzecha"><i class="mdi mdi-linkedin-box"></i></a></li>
+                <li><a href="https://twitter.com/ola_war"><i class="mdi mdi-twitter-box"></i></a></li>
+            </ul>                
+        </div>
+    </nav>
 
     <section id="introduction" class="full-height">
         <div class="container-fluid full-height no-gutter">
@@ -64,14 +62,14 @@
                         <h2>I'am an aspiring front-end developer</h2> 
                     </header>
 
-                    <nav class="introduction-links">
+                    <div class="introduction-links">
                         <ul>
                             <li><a href="#experience">experience &#124;</a></li>
                             <li><a href="#skills">skills &#124;</a></li>                            
                             <li><a href="#works">works &#124;</a></li>
                             <li><a href="#contact">contact</a></li>
                         </ul>
-                    </nav>
+                    </div>
 
                 </div>
             </div>
@@ -82,104 +80,121 @@
         <div class="container-fluid full-height no-gutter">
             <div class="row full-height no-gutter">
 
-                <div class="experience-intro full-height no-overflow no-gutter intro-box pink text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
+                <header class="experience-intro full-height no-scroll no-gutter intro-box pink text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
                     <h2>from PR for tech companies to PRogramming</h2>
                     <p>working for tech companies inspired me to actually become a front-end developer</p>        
+                </header>
+
+
+
+                <div class="experience-items full-height col-xs-12 col-sm-8 col-md-6 col-lg-6"> 
+<!--                     <div class="row">
+                        <h3 class="exp-title col-12">coding</h3>
+                    </div> -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="experience-navigation">
+                            <li class="exp-title exp-title-active">coding &#124;</li>
+                            <li class="exp-title">communications &#124;</li>
+                            <li class="exp-title">education</li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="experience-items overflow-scroll full-height col-xs-12 col-sm-8 col-md-6 col-lg-6"> 
-                    <div class="row">
-                        <h3 class="exp-title col-12">coding</h3>
-                    </div>
-
-                    <div class="row exp">
+                <section class="experience-coding experience-section-active">
+                    <article class="row exp">
                         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3"
-                            <a href="http://www.os3.pl"><div class="exp-logo os3"></div></a>
+                            <a href="http://www.os3.pl" title="Ostrzy"><div class="exp-logo os3"></div></a>
                         </div>
                         <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
-                            <h4>01 &#124; 2016 &#45; present</h4>
+                            <p class="exp-dates">01 &#124; 2016 &#45; present</p>
                             <h5>junior web developer &#124; internship</h5>
                             <p>PSD 2 HTML</p>
                             <p>RWD: adopting 'desktop' pages to mobile displays</p>
                             <p>e-mailings</p>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="row exp">
+                    <article class="row exp">
                         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3"
-                            <a href="http://www.coderslab.pl"><div class="exp-logo coderslab"></div></a>
+                            <a href="http://www.coderslab.pl" title="Coder's Lab"><div class="exp-logo coderslab"></div></a>
                         </div>
                         <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
-                            <h4>10 &#124; 2015</h4>
+                            <p class="exp-dates">10 &#124; 2015</p>
                             <h5>student</h5>
                             <p>intensive front-end programming course</p>
                             <p>main focus: HTML5, CSS3, Sass, JavaScript, jQuery</p>
                         </div>
-                    </div>
+                    </article>
+                </section>
 
-                    <div class="row">
+<!--                     <div class="row">
                         <h3 class="exp-title col-12">communications</h3>
-                    </div>
+                    </div> -->
 
-                    <div class="row exp">
+                <section class="experience-communications hidden">
+                    <article class="row exp">
                         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3"
-                            <a href="http://www.hkstrategies.pl"><div class="exp-logo hk"></div></a>
+                            <a href="http://www.hkstrategies.pl" title="Hill and Knowlton Strategies"><div class="exp-logo hk"></div></a>
                         </div>
                         <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
-                            <h4>03 &#124; 2013 &#45; 12 &#124; 2015</h4>
+                            <p class="exp-dates">03 &#124; 2013 &#45; 12 &#124; 2015</p>
                             <h5>senior associate &#124; associate</h5>
                             <p>team &amp; account management, communication strategy, media relations, new business</p>
                             <p>clients: Microsoft, ING Bank Śląski, Philips Lighting, Panasonic</p>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="row exp">
+                    <article class="row exp">
                         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3"
-                            <a href="http://www.havaspr.pl"><div class="exp-logo havas"></div></a>
+                            <a href="http://www.havaspr.pl" title="Havas PR Warsaw wcześniej Euro RSCG Sensors"><div class="exp-logo havas"></div></a>
                         </div>
                         <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
-                            <h4>05 &#124; 2011 &#45; 01 &#124; 2012</h4>
+                            <p class="exp-dates">05 &#124; 2011 &#45; 01 &#124; 2012</p>
                             <h5>consultant</h5>
                             <p>media relations, product seeding, media events</p>
                             <p>clients: Samsung, Orange</p>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="row exp">
+                    <article class="row exp">
                         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3"
-                            <a href="http://www.neuron.pl"><div class="exp-logo neuron"></div></a>
+                            <a href="http://www.neuron.pl" title="Neuron Agencja PR"><div class="exp-logo neuron"></div></a>
                         </div>
                         <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
-                            <h4>01 &#124; 2008 &#45; 01 &#124; 2011</h4>
+                            <p class="exp-dates">01 &#124; 2008 &#45; 01 &#124; 2011</p>
                             <h5>senior account executive &#124; account executive</h5>
                             <p>clients: Netia, Acronis, Icebreaker</p>
                         </div>
-                    </div>
+                    </article>
+                </section>
 
-                    <div class="row">
+<!--                     <div class="row">
                         <h3 class="exp-title col-12">education</h3>
-                    </div>
-
-                    <div class="row exp">
+                    </div> -->
+                <section class="experience-education hidden">
+                    <article class="row exp">
                         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3"
-                            <a href="http://www.uj.edu.pl"><div class="exp-logo uj"></div></a>
+                            <a href="http://www.uj.edu.pl" title="Uniwersytet Jagielloński"><div class="exp-logo uj"></div></a>
                         </div>
                         <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                             <h5>archaeology &#124; MA</h5>
                             <p>technical illustrator</p>
                             <p>excavations in Poland, Italy, Ukraine and Montenegro</p>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="row exp">
+                    <article class="row exp">
                         <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3"
-                            <a href="http://www.nowodworek.krakow.pl"><div class="exp-logo nowodworek"></div></a>
+                            <a href="http://www.nowodworek.krakow.pl" title="I Liceum Ogólnokształcące w Krakowie"><div class="exp-logo nowodworek"></div></a>
                         </div>
                         <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                             <h5>bilingual class with english</h5>
                             <p>CAE &amp; CPE</p>
                         </div>
-                    </div>
+                    </article>
+                </section>
                         
                 </div>
 
@@ -191,28 +206,28 @@
         <div class="container-fluid full-height no-gutter">
             <div class="row full-height no-gutter">
 
-                <div class="skills-intro intro-box taupe full-height no-gutter col-xs-12 col-sm-4 col-md-6 col-lg-6">
+                <header class="skills-intro intro-box taupe full-height no-gutter col-xs-12 col-sm-4 col-md-6 col-lg-6">
                     <h2>my current skills</h2>
                     <p>areas I would like to develop in soon: accessibilty, UX and JS frameworks such as AngularJS or ReactJS</p>                  
-                </div>
+                </header>
 
                 <div class="skills-items lighter full-height text-left col-xs-12 col-sm-8 col-md-6 col-lg-6">
                     <div class="row third-height">
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4">HTML</div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4">CSS and Sass</div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4">JavaScript and jQuery</div>                        
+                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>HTML</h4></div>
+                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>CSS and Sass</h4></div>
+                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>JavaScript and jQuery</h4></div>                        
                     </div>  
 
                     <div class="row third-height">
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4">RWD: media queries, grids, flexbox</div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4">Bootstrap and Susy</div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4">npm, Gulp</div>                        
+                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>RWD: media queries, grids, flexbox</h4></div>
+                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>Bootstrap and Susy</h4></div>
+                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>npm, Gulp</h4></div>                        
                     </div>  
 
                     <div class="row third-height">
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4">Git, SVN</div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4">AJAX</div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4">Adobe Photoshop</div>                        
+                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>Git, SVN</h4></div>
+                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>AJAX</h4></div>
+                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>Adobe Photoshop</h4></div>                        
                     </div>                 
                 </div>
 
@@ -224,11 +239,11 @@
         <div class="container-fluid full-height no-gutter">
             <div class="row full-height no-gutter">
 
-                <div class="works-intro full-height no-gutter intro-box pink text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
+                <header class="works-intro full-height no-gutter intro-box pink text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
                     <h2>my porfolio</h2>
                     <p>projects developed during my free time and the course at Coder's Lab</p>          
 
-                </div>
+                </header>
 
                 <div class="works-items full-height no-gutter col-xs-12 col-sm-8 col-md-6 col-lg-6">
                     <div class="work"></div> 
@@ -243,10 +258,10 @@
         <div class="container-fluid full-height no-gutter">
             <div class="row full-height no-gutter">
                 
-                <div class="contact-intro full-height no-gutter intro-box royal text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
+                <header class="contact-intro full-height no-gutter intro-box royal text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
                     <h2>I'm looking forward to hearing from you</h2>
                     <p>want to see more of my work, hire me or maybe you're looking for another board games player? just give ma a call!</p>    
-                </div>
+                </header>
 
                 <div class="contact-items lighter full-height no-gutter col-xs-12 col-sm-8 col-md-6 col-lg-6"> 
                    
@@ -256,18 +271,16 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="dark">
         <div class="container-fluid">
             <div class="row">
-                <div class="footer-content dark col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-content col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <p>Copyright &copy; 2016 Aleksandra Warzecha Awar. All Rights Reserved</p>
                     <p>Icons come from <a href="https://materialdesignicons.com/" title="Material Design Icons">Material Design Icons</a></p> 
                 </div>
             </div>
         </div>
     </footer>
-
-    </div>
 
 </body>
 </html>

@@ -1,7 +1,27 @@
-.exp-title {
-	margin-top: 4rem;
+.experience-navigation {
+	width: 100%;
 	text-align: center;
-	font-family: 'Raleway Dots', 'Arial', sans-serif;
+	margin: 5em auto 1em;
+	li {
+		display: inline-block;
+		cursor: pointer;
+	}
+}
+
+.exp-title {
+	text-align: center;
+	text-transform: uppercase;
+	&:hover {
+		color: $salmon;
+	}
+}
+
+.exp-title-active {
+	color: $salmon;
+}
+
+.experience-section-active {
+	display: block;
 }
 
 .exp {
@@ -26,7 +46,7 @@
 }
 
 .exp-description {
-	h4 {
+	.exp-dates {
 		font-size: 80%;
 	}
     h5 {
