@@ -15,12 +15,11 @@
 	background-size: cover;
 }
 
-.introduction-link {
-	display: block;
-	height: 25%;
-	background-color: #fff;
-	color: #000;
-	font-size: 24px;
-	padding-left: 20%;
-	padding-top: 10%;
+.introduction-links {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin: 7rem auto 0;
+	li {
+		display: inline-block;
+	}
 }

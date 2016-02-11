@@ -1,21 +1,39 @@
 html,
-body,
-.content-wrapper {
+body {
   width: 100%;
   height: 100%;
   font-family: 'Raleway', sans-serif;
   background-color: #fff;
   color: $dark;
+  font-size: 1.5vh;
 }
 
 h1 {
   color: inherit;
   font-family: 'Raleway Dots', 'Arial', sans-serif;
+  font-size: 5rem;
 }
 
-h2, h3 {
+h2 {
   color: inherit;
   font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 3rem;
+}
+
+h3 {
+  color: inherit;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 2rem;
+}
+
+h4 {
+  color: inherit;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 a {
@@ -29,6 +47,3 @@ a {
 @mixin clearfix {
   clear: both;
 }
-
-
-  
