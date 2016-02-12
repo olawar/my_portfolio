@@ -4,9 +4,12 @@
 
 .overflow-scroll {
 	overflow-y: scroll;
+	@media screen and (max-width: 767px) {
+		overflow-y: auto;
+		overflow: visible;
+	}
 }
 
 .hidden {
 	display: none;
 }
-

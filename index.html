@@ -35,6 +35,7 @@
             <span class="navigation-state"></span>
         </div>
         <div class="navigation-wrapper hidden">
+            <h2 class="hidden">Page navigation</h2>
             <ul class="navigation-main">
                 <li><a href="#introduction">home</a></li>
                 <li><a href="#experience">experience</a></li>
@@ -51,10 +52,10 @@
         </div>
     </nav>
 
-    <section id="introduction" class="full-height">
+    <section id="introduction">
         <div class="container-fluid full-height no-gutter">
             <div class="row full-height no-gutter">
-                <div class="introduction-intro full-height no-gutter dark intro-box text-left col-12">
+                <div class="introduction-intro full-height no-gutter dark intro-box text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                     <div class="introduction-photo"></div>
 
@@ -77,18 +78,18 @@
         </div>
     </section>
 
-    <section id="experience" class="full-height">
+    <section id="experience">
         <div class="container-fluid full-height no-gutter">
             <div class="row full-height no-gutter">
 
-                <header class="experience-intro full-height no-scroll no-gutter intro-box pink text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
-                    <h2>from PR for tech companies to PRogramming</h2>
+                <header class="experience-intro full-height no-scroll no-gutter intro-box taupe text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
+                    <h2>from PR for tech companies to programming</h2>
                     <p>working for tech companies inspired me to actually become a front-end developer</p>
                 </header>
 
                 <div class="experience-items full-height col-xs-12 col-sm-8 col-md-6 col-lg-6">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <ul class="experience-navigation">
                                 <li class="exp-title exp-title-coding exp-title-active">coding &#124;</li>
                                 <li class="exp-title exp-title-communications">communications &#124;</li>
@@ -98,6 +99,7 @@
                     </div>
 
                     <section class="experience-coding experience-section experience-section-active">
+                        <h3 class="hidden">Coding</h3>
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
                                 <a href="http://www.os3.pl" title="Ostrzy"><div class="exp-logo os3"></div></a>
@@ -125,6 +127,7 @@
                     </section>
 
                     <section class="experience-communications experience-section hidden">
+                        <h3 class="hidden">Communications</h3>
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
                                 <a href="http://www.hkstrategies.pl" title="Hill and Knowlton Strategies"><div class="exp-logo hk"></div></a>
@@ -156,13 +159,14 @@
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">01 &#124; 2008 &#45; 01 &#124; 2011</p>
                                 <h5>senior account executive &#124; account executive</h5>
-                                <p>media relations, media events</p>
+                                <p>media relations, media events, social media</p>
                                 <p>clients: Netia, Acronis, Icebreaker</p>
                             </div>
                         </article>
                     </section>
 
                     <section class="experience-education experience-section hidden">
+                        <h3 class="hidden">Education</h3>
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
                                 <a href="http://www.uj.edu.pl" title="Uniwersytet Jagielloński"><div class="exp-logo uj"></div></a>
@@ -193,31 +197,74 @@
         <div class="container-fluid full-height no-gutter">
             <div class="row full-height no-gutter">
 
-                <header class="skills-intro intro-box taupe full-height no-gutter col-xs-12 col-sm-4 col-md-6 col-lg-6">
+                <header class="skills-intro intro-box royal full-height no-gutter col-xs-12 col-sm-4 col-md-6 col-lg-6">
                     <h2>my current skills</h2>
-                    <p>areas I would like to develop in soon: accessibility, UX and JS frameworks such as AngularJS or ReactJS</p>
+                    <p>areas I would like to develop soon: accessibility, UX and JS frameworks such as AngularJS or ReactJS</p>
                 </header>
 
-                <div class="skills-items lighter full-height text-left col-xs-12 col-sm-8 col-md-6 col-lg-6">
-                    <div class="row third-height">
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>HTML</h4></div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>CSS and Sass</h4></div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>JavaScript and jQuery</h4></div>
+                <section class="skills-items full-height lighter no-gutter col-xs-12 col-sm-8 col-md-6 col-lg-6">
+                    <div class="row no-gutter">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3 class="skills-title">I am quite confident in:</h3>
+                        </div>
+
+                        <div class="skill html col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <p class="hidden">HTML</p>
+                        </div>
+
+                        <div class="skill css col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <p class="hidden">CSS</p>
+                        </div>
                     </div>
 
-                    <div class="row third-height">
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>RWD: media queries, grids, flexbox</h4></div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>Bootstrap and Susy</h4></div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>npm, Gulp</h4></div>
+                    <div class="row no-gutter">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3 class="skills-title">I have solid basics (which I'm systematically developing) in:</h3>
+                        </div>
+
+                        <div class="skill javascript col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <p class="hidden">JavaScript</p>
+                        </div>
+
+                        <div class="skill jquery col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <p class="hidden">jQuery</p>
+                        </div>
                     </div>
 
-                    <div class="row third-height">
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>Git, SVN</h4></div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>AJAX</h4></div>
-                        <div class="skill col-xs-6 col-sm-4 col-md-4 col-lg-4"><h4>Adobe Photoshop</h4></div>
-                    </div>
-                </div>
+                    <div class="row no-gutter">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3 class="skills-title">I use - quite independently:</h3>
+                        </div>
 
+                        <div class="skill background-right sass col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p class="hidden">Sass</p>
+                        </div>
+
+                        <div class="skill gulp col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p class="hidden">Gulp</p>
+                        </div>
+
+                        <div class="skill background-left bootstrap col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p class="hidden">Bootstrap</p>
+                        </div>
+
+                        <div class="skill background-right susy col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p class="hidden">Susy</p>
+                        </div>
+
+                        <div class="skill photoshop col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p class="hidden">Photoshop</p>
+                        </div>
+
+                        <div class="skill background-left git col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <p class="hidden">Git</p>
+                        </div>
+
+                        <p class="skills-add col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            ... and I have come across <span>AJAX</span>, <span>SVN</span> and a little bit of <span>Wordpress</span>
+                        </p>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
@@ -226,36 +273,36 @@
         <div class="container-fluid full-height no-gutter">
             <div class="row full-height no-gutter">
 
-                <header class="works-intro full-height no-gutter intro-box pink text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
+                <header class="works-intro full-height no-gutter intro-box dark text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
                     <h2>my porfolio</h2>
                     <p>projects developed during my free time and the course at Coder's Lab</p>
                 </header>
 
                 <div class="works-items full-height overflow-scroll col-xs-12 col-sm-8 col-md-6 col-lg-6">
                     <div class="row">
-                        <div class="work-item autoreplies-creator col-12">
+                        <div class="work-item autoreplies-creator no-gutter col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="item-mask">
                                 <div class="mask-content">
                                     <span>
-                                        The Autoreplies Creator - my own DOM manipulation project
+                                        the Autoreplies Creator - my own DOM manipulation project
                                     </span>
                                     <br>
                                     <span>
-                                        View it on <a href="#">GitHub</a> or <a href="#">here</a>
+                                        view it on <a href="#">GitHub</a> or <a href="#">here</a>
                                     </span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="work-item old-portfolio col-12">
+                        <div class="work-item old-portfolio no-gutter col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="item-mask">
                                 <div class="mask-content">
                                     <span>
-                                        My previous portfolio page from Coder's Lab workshops
+                                        my previous responsive portfolio page from Coder's Lab workshops built on a grid
                                     </span>
                                     <br>
                                     <span>
-                                        View it on <a href="#">GitHub</a> or <a href="#">here</a>
+                                        view it on <a href="#">GitHub</a> or <a href="#">here</a>
                                     </span>
                                 </div>
                             </div>
@@ -266,11 +313,11 @@
                                 <div class="item-mask">
                                     <div class="mask-content">
                                         <span>
-                                            A sample company page from Coder's Lab workshops
+                                            a responsive company page from Coder's Lab workshops built with flexbox
                                         </span>
                                         <br>
                                         <span>
-                                            View it on <a href="#">GitHub</a> or <a href="#">here</a>
+                                            view it on <a href="#">GitHub</a> or <a href="#">here</a>
                                         </span>
                                     </div>
                                 </div>
@@ -280,31 +327,30 @@
                                 <div class="item-mask">
                                     <div class="mask-content">
                                         <span>
-                                            A mailing from Coder's Lab workshops
+                                            a mailing from Coder's Lab workshops
                                         </span>
                                         <br>
                                         <span>
-                                            View it on <a href="#">GitHub</a> or <a href="#">here</a>
+                                            view it on <a href="#">GitHub</a> or <a href="#">here</a>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="work-item shop-site col-12">
+                        <div class="work-item shop-site no-gutter col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="item-mask">
                                 <div class="mask-content">
                                     <span>
-                                        An e-shop page from Coder's Lab workshops
+                                        an e-shop page from Coder's Lab workshops with JS order calculator
                                     </span>
                                     <br>
                                     <span>
-                                        View it on <a href="#">GitHub</a> or <a href="#">here</a>
+                                        view it on <a href="#">GitHub</a> or <a href="#">here</a>
                                     </span>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -315,7 +361,7 @@
         <div class="container-fluid full-height no-gutter">
             <div class="row full-height no-gutter">
 
-                <header class="contact-intro full-height no-gutter intro-box royal text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
+                <header class="contact-intro full-height no-gutter intro-box taupe text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
                     <h2>I'm looking forward to hearing from you</h2>
                     <p>want to see more of my work, hire me or maybe you're looking for another board games player? just give me a call!</p>
                 </header>
@@ -332,8 +378,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="footer-content col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <p>Copyright &copy; 2016 Aleksandra Warzecha Awar. All Rights Reserved</p>
-                    <p>Icons come from <a href="https://materialdesignicons.com/" title="Material Design Icons">Material Design Icons</a></p>
+                    <p><small>Copyright &copy;2016 Aleksandra Warzecha Awar</small></p>
+                    <p><small>Icons come from <a href="https://materialdesignicons.com/" title="Material Design Icons">Material Design Icons</a></small></p>
                 </div>
             </div>
         </div>

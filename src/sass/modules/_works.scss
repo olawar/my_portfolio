@@ -6,16 +6,6 @@
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  // &:hover {
-  //   background-size: 140%;
-  // }
-  &:hover {
-    animation: maskHover;
-    animation-delay: 40ms;
-    animation-duration: 550ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-  }
 }
 
 .item-mask {
@@ -26,15 +16,6 @@
   span, a {
     color: rgba(0, 0, 0, 0);
   }
-  // &:hover {
-  //   background-color: rgba(0, 0, 0, 0.8);
-  //   span {
-  //     color: $section-light;
-  //   }
-  //   a {
-  //     color: lighten( $contrast-accent, 15% );
-  //   }
-  // }
   &:hover {
     animation: maskHover;
     animation-delay: 40ms;
@@ -53,11 +34,9 @@
 @keyframes maskHover {
   0% {
     background-color: rgba(0, 0, 0, 0.3);
-    background-size: cover;
   }
   100% {
     background-color: rgba(0, 0, 0, 0.8);
-    background-size: 140%;
   }
 }
 

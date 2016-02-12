@@ -1,6 +1,78 @@
+.skills-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	color: $salmon;
+	margin: 2rem auto;
+
+}
+
 .skill {
-	height: 100%;
+	height: 5rem;
 	box-sizing: border-box;
 	text-align: center;
-	padding-top: 10%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 1rem auto 3rem;
+}
+
+.background-left {
+	background-position: left;
+}
+
+.background-right {
+	background-position: right;
+}
+
+.skills-add {
+	text-align: center;
+	font-size: 1.25rem;
+	span {
+		color: $salmon;
+	}
+}
+
+.html {
+	background-image: url('../images/HTML.png');
+	background-position: 85% center;
+}
+
+.css {
+	background-image: url('../images/CSS.png');
+	background-position: 15% center;
+}
+
+.javascript {
+	background-image: url('../images/JS.jpg');
+	background-position: 85% center;
+}
+
+.jquery {
+	background-image: url('../images/JQ.gif');
+	background-position: 15% center;
+}
+
+.sass {
+	background-image: url('../images/SASS.png');
+}
+
+.bootstrap {
+	background-image: url('../images/BOOTSTRAP.png');
+}
+
+.gulp {
+	background-image: url('../images/GULP.png');
+}
+
+.git {
+	background-image: url('../images/GIT.png');
+}
+
+.photoshop {
+	background-image: url('../images/PS.png');
+}
+
+.susy {
+	background-image: url('../images/SUSY.png');
 }

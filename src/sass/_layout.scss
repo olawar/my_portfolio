@@ -1,13 +1,13 @@
-.content-wrapper {
-	position: relative;
-}
-
 .full-height {
 	height: 100%;
+	@media screen and (max-width: 767px) {
+		height: auto;
+	}
 }
 
 .height-extended {
 	min-height: 100%;
+	position: relative;
 }
 
 .third-height {
@@ -27,11 +27,19 @@
 #experience,
 #contact {
 	height: 100%;
+	display: block;
+	position: relative;
+	@media screen and (max-width: 767px) {
+		height: auto;
+	}
+}
+
+[class*="-intro"] {
 	position: relative;
 }
 
-div[class*="-intro"] {
-	position: relative;
+[class*="-items"]:not(.works-items) {
+	padding: 4rem 1rem;
 }
 
 

@@ -68,6 +68,9 @@
   border-top-left-radius: 5rem;
   z-index: 99;
   padding: 8% 10%;
+	@media screen and (max-width: 800px) {
+		width: 100%;
+	}
   .navigation-main {
     padding-left: 0;
     li {
@@ -94,8 +97,8 @@
     }
     i {
       color: #fff;
-      margin: 0 2rem;
-      font-size: 2rem;
+      margin: 1rem 3rem;
+      transform: scale(1.5);
       &:hover {
         color: $dark;
       }
