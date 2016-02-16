@@ -6,12 +6,19 @@ body {
   background-color: #fff;
   color: $dark;
   font-size: 1.5vh;
+  @media screen and (min-width: 400px) and (max-width: 767px){
+    font-size: 2.5vh;
+  }
 }
 
 h1 {
   color: inherit;
   font-family: 'Raleway Dots', 'Arial', sans-serif;
   font-size: 5rem;
+
+  @media screen and (min-width: 400px) and (max-width: 767px){
+    font-size: 3.5rem;
+  }
 }
 
 h2 {

@@ -13,13 +13,17 @@ var Application = function(){
         hamburgerMenu.on('click', function(){
             navigationState.toggleClass('navigation-open');
             navigationTray.toggleClass('hidden').toggleClass('navigation-wrapper-visible');
-            // $('body').toggleClass('no-scroll');
+            if(window.matchMedia('(max-width: 899px)').matches){
+                $('body').toggleClass('no-scroll');
+            }
         });
 
         navigationLinks.on('click', function(){
             navigationState.toggleClass('navigation-open');
             navigationTray.toggleClass('hidden').toggleClass('navigation-wrapper-visible');
-            // $('body').toggleClass('no-scroll');
+            if(window.matchMedia('(max-width: 899px)').matches){
+                $('body').toggleClass('no-scroll');
+            }
         });
 
     }

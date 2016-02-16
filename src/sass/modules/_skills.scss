@@ -3,29 +3,56 @@
 	text-transform: uppercase;
 	font-size: 1.5rem;
 	color: $salmon;
-	margin: 2rem auto;
+	margin: 2.5rem auto;
 
+	@media screen and (max-width: 767px){
+		margin: 2.5rem auto 4.5rem;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 991px){
+		margin: 2rem auto 3rem;
+	}
+}
+
+.skill-block {
+	height: 8rem;
+	box-sizing: border-box;
+	width: 7rem;
+	position: relative;
+	p {
+		font-size: 1rem;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 767px){
+		margin-bottom: 2rem;
+	}
+}
+
+.right {
+	margin-left: calc(100% - 7rem);
+}
+
+.left {
+	margin-right: calc(100% - 7rem);
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .skill {
+	width: 5rem;
 	height: 5rem;
-	box-sizing: border-box;
-	text-align: center;
+	margin: 0 auto 0.5rem;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin: 1rem auto 3rem;
-}
-
-.background-left {
-	background-position: left;
-}
-
-.background-right {
-	background-position: right;
 }
 
 .skills-add {
+	margin-top: 2rem;
 	text-align: center;
 	font-size: 1.25rem;
 	span {
@@ -35,22 +62,18 @@
 
 .html {
 	background-image: url('../images/HTML.png');
-	background-position: 85% center;
 }
 
 .css {
 	background-image: url('../images/CSS.png');
-	background-position: 15% center;
 }
 
 .javascript {
 	background-image: url('../images/JS.jpg');
-	background-position: 85% center;
 }
 
 .jquery {
 	background-image: url('../images/JQ.gif');
-	background-position: 15% center;
 }
 
 .sass {

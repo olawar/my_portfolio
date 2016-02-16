@@ -1,5 +1,9 @@
 #introduction {
   height: 100%;
+
+  @media screen and (min-width: 400px) and (max-width: 767px){
+		height: auto;
+	}
 }
 
 .introduction-intro {
