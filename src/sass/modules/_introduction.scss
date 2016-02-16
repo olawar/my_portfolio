@@ -1,8 +1,13 @@
 #introduction {
   height: 100%;
 
-  @media screen and (min-width: 400px) and (max-width: 767px){
+  @media screen and (min-width: 420px) and (max-width: 767px){
 		height: auto;
+	}
+
+	@media screen and (min-width: 500px) and (max-width: 767px) and (min-height: 600px){
+		height: 100%;
+		padding-top: 15%;
 	}
 }
 
