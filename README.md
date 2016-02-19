@@ -16,7 +16,7 @@ I use Gulp for the final build - see **Gulpfile** for more information on the pl
 
 ##See the Result!
 
-You will be able to access the deployed version of this site once it's finished :)
+http://ola.warzecha.org/
 
 
 Enjoy!
