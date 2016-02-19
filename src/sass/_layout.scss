@@ -62,7 +62,8 @@
 }
 
 [class*="-items"]:not(.works-items) {
-	padding: 4rem 1rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 
