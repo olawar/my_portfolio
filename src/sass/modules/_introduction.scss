@@ -1,6 +1,11 @@
 #introduction {
   height: 100%;
 
+	//mobile fix
+	@media screen and (max-width: 419px){
+		height: auto;
+	}
+
   @media screen and (min-width: 420px) and (max-width: 767px){
 		height: auto;
 	}

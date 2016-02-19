@@ -35,6 +35,10 @@
 		padding-top: 40%;
 	}
 
+	@media screen and (min-width: 768px) and (max-width: 1020px) and (min-height: 600px){
+    padding-top: 25%;
+  }
+
 	@media screen and (min-width: 420px) and (max-width: 767px){
 		padding-top: 10%;
 	}
