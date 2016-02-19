@@ -115,7 +115,7 @@
 
 			@media screen and (min-width: 360px) and (max-width: 767px) and (orientation:landscape){
 				font-size: 2rem;
-				margin: 2rem 4rem;
+				margin: 5% 5%;
 			}
 
     }
@@ -137,6 +137,11 @@
     padding-left: 0;
 		width: 30%;
 		float: right;
+		
+		@media screen and (min-width: 360px) and (max-width: 767px) and (orientation:landscape){
+			text-align: left;
+		}
+
 		@media screen and (max-width: 899px) {
 			width: auto;
 			float: none;
