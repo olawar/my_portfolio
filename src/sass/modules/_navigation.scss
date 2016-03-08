@@ -46,6 +46,7 @@
 
 .navigation-open {
 	background-color: transparent;
+	transition: transform ease-in 1s;
 	&:before {
 		top: 0;
 		transform: rotate(45deg);
@@ -53,6 +54,9 @@
 	&:after {
 		top: -0.5rem;
 		transform: rotate(-45deg);
+	}
+	&:hover {
+		transform: rotate(360deg);
 	}
 }
 
