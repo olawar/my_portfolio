@@ -47,7 +47,7 @@
 <body>
 
     <nav class="navigation-handy">
-        <div class="navigation-bubble">
+        <div class="navigation-bubble" tabindex="0">
             <span class="navigation-state"></span>
         </div>
         <div class="navigation-wrapper hidden">
@@ -61,9 +61,9 @@
             </ul>
             <hr>
             <ul class="navigation-social">
-                <li><a href="https://github.com/olawar" title="My GitHub profile"><i class="mdi mdi-github-box" aria-hidden="true"></i></a></li>
-                <li><a href="https://linkedin.com/in/awarzecha" title="My LinkedIn profile"><i class="mdi mdi-linkedin-box" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/ola_war" title="My Twitter profile"><i class="mdi mdi-twitter-box" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/olawar" title="My GitHub profile"><i class="mdi mdi-github-box" aria-hidden="true"></i><span class="invisible">My GitHub profile</span></a></li>
+                <li><a href="https://linkedin.com/in/awarzecha" title="My LinkedIn profile"><i class="mdi mdi-linkedin-box" aria-hidden="true"></i><span class="invisible">My LinkedIn profile</span></a></li>
+                <li><a href="https://twitter.com/ola_war" title="My Twitter profile"><i class="mdi mdi-twitter-box" aria-hidden="true"></i><span class="invisible">My Twitter profile</span></a></li>
             </ul>
         </div>
     </nav>
@@ -107,9 +107,9 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <ul class="experience-navigation">
-                                <li class="exp-title exp-title-coding exp-title-active">coding &#124;</li>
-                                <li class="exp-title exp-title-communications">communications &#124;</li>
-                                <li class="exp-title exp-title-education">education</li>
+                                <li class="exp-title exp-title-coding exp-title-active" tabindex="0" id="controller-c" aria-controls="content-c">coding &#124;</li>
+                                <li class="exp-title exp-title-communications" tabindex="0" id="controller-pr" aria-controls="content-pr">communications &#124;</li>
+                                <li class="exp-title exp-title-education" tabindex="0" id="controller-e" aria-controls="content-e">education</li>
                             </ul>
                         </div>
                     </div>
@@ -117,9 +117,9 @@
                     <section class="experience-coding experience-section experience-section-active">
                         <h3 class="hidden">Coding</h3>
 
-                        <article class="row exp">
+                        <article class="row exp" aria-labelledby="controller-c" id="content-c">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.efigence.com" title="Efigence"><div class="exp-logo efigence"></div></a>
+                                <a href="http://www.efigence.com" title="Efigence"><div class="exp-logo efigence"><span class="invisible">Efigence</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">03 &#124; 2016 &#45; present</p>
@@ -128,9 +128,9 @@
                             </div>
                         </article>
 
-                        <article class="row exp">
+                        <article class="row exp" aria-labelledby="controller-pr" id="content-pr">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.os3.pl" title="Ostrzy"><div class="exp-logo os3"></div></a>
+                                <a href="http://www.os3.pl" title="Ostrzy"><div class="exp-logo os3"><span class="invisible">OS3</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">01 &#124; 2016 &#45; 03 &#124; 2016</p>
@@ -141,9 +141,9 @@
                             </div>
                         </article>
 
-                        <article class="row exp">
+                        <article class="row exp" aria-labelledby="controller-e" id="content-e">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.coderslab.pl" title="Coder's Lab"><div class="exp-logo coderslab"></div></a>
+                                <a href="http://www.coderslab.pl" title="Coders Lab"><div class="exp-logo coderslab"><span class="invisible">Coders Lab</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">10 &#124; 2015</p>
@@ -158,7 +158,7 @@
                         <h3 class="hidden">Communications</h3>
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.hkstrategies.pl" title="Hill and Knowlton Strategies"><div class="exp-logo hk"></div></a>
+                                <a href="http://www.hkstrategies.pl" title="Hill and Knowlton Strategies"><div class="exp-logo hk"><span class="invisible">Hill and Knowlton Strategies</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">03 &#124; 2013 &#45; 12 &#124; 2015</p>
@@ -170,7 +170,7 @@
 
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.havaspr.pl" title="Havas PR Warsaw wcześniej Euro RSCG Sensors"><div class="exp-logo havas"></div></a>
+                                <a href="http://www.havaspr.pl" title="Havas PR Warsaw wcześniej Euro RSCG Sensors"><div class="exp-logo havas"><span class="invisible">Havas PR Warsaw</span></span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">05 &#124; 2011 &#45; 01 &#124; 2012</p>
@@ -182,7 +182,7 @@
 
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.neuron.pl" title="Neuron Agencja PR"><div class="exp-logo neuron"></div></a>
+                                <a href="http://www.neuron.pl" title="Neuron Agencja PR"><div class="exp-logo neuron"><span class="invisible">Neuron Agencja PR</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">01 &#124; 2008 &#45; 01 &#124; 2011</p>
@@ -197,7 +197,7 @@
                         <h3 class="hidden">Education</h3>
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.uj.edu.pl" title="Uniwersytet Jagielloński"><div class="exp-logo uj"></div></a>
+                                <a href="http://www.uj.edu.pl" title="Uniwersytet Jagielloński"><div class="exp-logo uj"><span class="invisible">Uniwersytet Jagielloński</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <h5>archaeology &#124; MA</h5>
@@ -209,7 +209,7 @@
 
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.nowodworek.krakow.pl" title="I Liceum Ogólnokształcące w Krakowie"><div class="exp-logo nowodworek"></div></a>
+                                <a href="http://www.nowodworek.krakow.pl" title="I Liceum Ogólnokształcące w Krakowie"><div class="exp-logo nowodworek"><span class="invisible">I Liceum Ogólnokształcące w Krakowie</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <h5>bilingual class with english</h5>
@@ -467,10 +467,10 @@
 
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <ul class="contact-methods">
-                                <li><a href="mailto:&#119;&#097;&#114;&#122;&#101;&#099;&#104;&#097;&#046;&#111;&#108;&#097;+&#112;&#102;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" title="&#119;&#097;&#114;&#122;&#101;&#099;&#104;&#097;&#046;&#111;&#108;&#097;+&#112;&#102;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><i class="mdi mdi-email" aria-hidden="true"></i></a></li>
-                                <li><a href="https://github.com/olawar" title="My GitHub profile"><i class="mdi mdi-github-box" aria-hidden="true"></i></a></li>
-                                <li><a href="https://linkedin.com/in/awarzecha" title="My LinkedIn profile"><i class="mdi mdi-linkedin-box" aria-hidden="true"></i></a></li>
-                                <li><a href="https://twitter.com/ola_war" title="My Twitter profile"><i class="mdi mdi-twitter-box" aria-hidden="true"></i></a></li>
+                                <li><a href="mailto:&#119;&#097;&#114;&#122;&#101;&#099;&#104;&#097;&#046;&#111;&#108;&#097;+&#112;&#102;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" title="&#119;&#097;&#114;&#122;&#101;&#099;&#104;&#097;&#046;&#111;&#108;&#097;+&#112;&#102;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><i class="mdi mdi-email" aria-hidden="true"></i><span class="invisible">My email address</span></a></li>
+                                <li><a href="https://github.com/olawar" title="My GitHub profile"><i class="mdi mdi-github-box" aria-hidden="true"></i><span class="invisible">My GitHub profile</span></a></li>
+                                <li><a href="https://linkedin.com/in/awarzecha" title="My LinkedIn profile"><i class="mdi mdi-linkedin-box" aria-hidden="true"></i><span class="invisible">My LinkedIn profile</span></a></li>
+                                <li><a href="https://twitter.com/ola_war" title="My Twitter profile"><i class="mdi mdi-twitter-box" aria-hidden="true"></i><span class="invisible">My Twitter profile</span></a></li>
                             </ul>
                         </div>
 
@@ -487,7 +487,7 @@
             <div class="row">
                 <div class="footer-content col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <p><small>Copyright &copy;2016 Aleksandra Warzecha Awar</small></p>
-                    <p><small>Icons from <a href="https://materialdesignicons.com/" title="Material Design Icons">Material Design Icons</a></small></p>
+                    <p><small>Icons from <a href="https://materialdesignicons.com/">Material Design Icons</a></small></p>
                 </div>
             </div>
         </div>

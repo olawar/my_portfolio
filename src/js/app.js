@@ -32,24 +32,38 @@ var Application = function(){
         var experienceTopics = $('.exp-title');
         var experienceArticle = $('.experience-section');
 
+        $('.experience-navigation').find('.exp-title-active').attr('aria-expanded', 'true').attr('aria-selected', 'true');
+        $('.experience-items').find('.experience-section-active').attr('aria-expanded', 'true').attr('aria-selected', 'true');
+
         experienceTopics.on('click', function() {
             if($(this).hasClass('exp-title-active')) {
                 return false;
             }
             else {
-                $('.experience-navigation').find('.exp-title-active').removeClass('exp-title-active');
-                $('.experience-items').find('.experience-section-active').removeClass('experience-section-active').addClass('hidden');
-                $(this).addClass('exp-title-active');
+                $('.experience-navigation').find('.exp-title-active').removeClass('exp-title-active').attr('aria-expanded', 'false').attr('aria-selected', 'false');
+                $('.experience-items').find('.experience-section-active').removeClass('experience-section-active').addClass('hidden').attr('aria-hidden', 'true');
+                $(this).addClass('exp-title-active').attr('aria-expanded', 'true').attr('aria-selected', 'true');
                 if($(this).hasClass('exp-title-coding')) {
-                    $('.experience-coding').removeClass('hidden').addClass('experience-section-active');
+                    $('.experience-coding').removeClass('hidden').addClass('experience-section-active').attr('aria-hidden', 'false');
                 }
                 else if ($(this).hasClass('exp-title-communications')) {
-                    $('.experience-communications').removeClass('hidden').addClass('experience-section-active');
+                    $('.experience-communications').removeClass('hidden').addClass('experience-section-active').attr('aria-hidden', 'false');
                 }
                 else {
-                    $('.experience-education').removeClass('hidden').addClass('experience-section-active');
+                    $('.experience-education').removeClass('hidden').addClass('experience-section-active').attr('aria-hidden', 'false');
                 }
             }
+        });
+
+    }
+
+    function accessibleClick(){
+
+        $('.navigation-bubble, .exp-title, .navigation-wrapper a').on('keypress', function(e){
+            if(e.which == 13) {
+                $(this).trigger('click');
+            }
+
         });
 
     }
@@ -57,7 +71,8 @@ var Application = function(){
     return {
         testStart:testStart,
         navigationToggle:navigationToggle,
-        experienceTabs:experienceTabs
+        experienceTabs:experienceTabs,
+        accessibleClick:accessibleClick
     }
 };
 
@@ -67,4 +82,5 @@ $(function(){
     app.testStart();
     app.navigationToggle();
     app.experienceTabs();
+    app.accessibleClick();
 });
