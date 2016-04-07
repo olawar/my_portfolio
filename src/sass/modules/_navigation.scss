@@ -17,6 +17,14 @@
 	text-align: center;
 	cursor: pointer;
 	z-index: 100;
+	&:focus {
+		border: 0;
+		outline: 0;
+	}
+	&:focus:not(:hover):not(:active){
+		border: 1px dashed yellow;
+		border-radius: 50%;
+	}
 }
 
 .navigation-state {
