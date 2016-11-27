@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-jshint": "latest",
+    "jshint-stylish": "latest",
+    "gulp-uglify": "latest",
+    "gulp-sass": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-minify-css": "latest",
+    "jquery": "latest"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-jshint": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "latest"
+  },
+  "author": "Ola Warzecha",
+  "license": ""
+}

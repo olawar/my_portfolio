@@ -6,6 +6,7 @@ var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var minifyCss = require('gulp-minify-css');
+var connect = require('gulp-connect');
 
 
 gulp.task('lint', function() {
@@ -29,7 +30,11 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['lint', 'scripts', 'sass'], function () {
+gulp.task('connect', function() {
+  connect.server();
+});
+
+gulp.task('default', ['lint', 'scripts', 'sass', 'connect'], function () {
     gulp.watch('src/js/**/*.js', ['lint', 'scripts']);
     gulp.watch('src/sass/**/*.{sass,scss}', ['sass']);
 });
