@@ -3,6 +3,18 @@
 	top: 15px;
 	left: 15px;
 	z-index: 1000;
+
+	&:focus {
+		border: 0 !important;
+		outline: 0 !important;
+	}
+
+	&:hover,
+	&:focus {
+		.navigation-bubble {
+			background-color: $contrastSecondary;
+		}
+	}
 }
 
 .navigation-bubble {
@@ -10,20 +22,18 @@
 	height: 5rem;
 	width: 5rem;
 	border-radius: 50%;
-	background-color: $salmon;
+	background-color: $contrast;
 	box-sizing: border-box;
 	position: relative;
 	padding: 2.15rem 1rem;
 	text-align: center;
 	cursor: pointer;
 	z-index: 100;
+	color: #fff;
+	transition: all .3s ease-in-out;
 	&:focus {
 		border: 0;
 		outline: 0;
-	}
-	&:focus:not(:hover):not(:active){
-		border: 1px dashed yellow;
-		border-radius: 50%;
 	}
 }
 
@@ -70,7 +80,7 @@
 
 .navigation-wrapper-visible {
   display: block;
-	background-color: $salmon;
+	background-color: $contrast;
 	width: calc(100% - 30px);
 	height: 5rem;
 	color: #fff;

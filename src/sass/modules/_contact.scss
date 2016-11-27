@@ -1,6 +1,13 @@
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .contact-hobby {
   h3 {
-    margin: 6rem auto 3rem;
+    margin: 1rem auto 3rem;
+    color: $darkSecondary;
   }
 }
 
@@ -10,12 +17,11 @@
 
 .hobby-image {
   display: block;
-  width: 12rem;
-  height: 12rem;
+  width: 11rem;
+  height: 11rem;
   background-size: contain;
   border-radius: 50%;
-  margin: 4rem auto 2rem;
-  border: 2px solid $salmon;
+  margin: 2rem auto;
   @media screen and (min-width: 768px) and (max-width: 1150px) {
     width: 10rem;
     height: 10rem;
@@ -36,7 +42,8 @@
 
 .contact-data {
   h3 {
-    margin: 8rem auto 3rem;
+    margin: 4rem auto 3rem;
+    color: $darkSecondary;
   }
 }
 
@@ -48,11 +55,21 @@
     width: 5rem;
     margin: 2%;
   }
+  a {
+    color: $darkSecondary;
+    &:focus,
+    &:hover {
+      color: $contrastSecondary;
+      outline: none;
+    }
+  }
+
   i {
     transform: scale(2);
 
     @media screen and (max-width: 700px){
       transform: scale(1.5);
     }
+
   }
 }

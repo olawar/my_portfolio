@@ -5,10 +5,10 @@ var Application = function(){
     }
 
     function navigationToggle(){
-        var hamburgerMenu = $('.navigation-bubble');
-        var navigationState = $('.navigation-state');
-        var navigationTray = $('.navigation-wrapper');
-        var navigationLinks = $('.navigation-wrapper a');
+        var hamburgerMenu = $('.navigation-bubble'),
+            navigationState = $('.navigation-state'),
+            navigationTray = $('.navigation-wrapper'),
+            navigationLinks = $('.navigation-wrapper a');
 
         hamburgerMenu.on('click', function(){
             navigationState.toggleClass('navigation-open');
@@ -30,12 +30,12 @@ var Application = function(){
 
     function experienceTabs(){
         var experienceTopics = $('.exp-title');
-        var experienceArticle = $('.experience-section');
 
         $('.experience-navigation').find('.exp-title-active').attr('aria-expanded', 'true').attr('aria-selected', 'true');
         $('.experience-items').find('.experience-section-active').attr('aria-expanded', 'true').attr('aria-selected', 'true');
 
-        experienceTopics.on('click', function() {
+        experienceTopics.on('click', function(e) {
+            e.preventDefault();
             if($(this).hasClass('exp-title-active')) {
                 return false;
             }
@@ -43,6 +43,7 @@ var Application = function(){
                 $('.experience-navigation').find('.exp-title-active').removeClass('exp-title-active').attr('aria-expanded', 'false').attr('aria-selected', 'false');
                 $('.experience-items').find('.experience-section-active').removeClass('experience-section-active').addClass('hidden').attr('aria-hidden', 'true');
                 $(this).addClass('exp-title-active').attr('aria-expanded', 'true').attr('aria-selected', 'true');
+
                 if($(this).hasClass('exp-title-coding')) {
                     $('.experience-coding').removeClass('hidden').addClass('experience-section-active').attr('aria-hidden', 'false');
                 }
@@ -63,7 +64,22 @@ var Application = function(){
             if(e.which == 13) {
                 $(this).trigger('click');
             }
+        });
 
+    }
+
+    function worksMask(){
+
+        var worksItems = $('.item-mask');
+
+        worksItems.on('focus', function(e){
+            worksItems.removeClass('mask-active');
+            $(this).addClass('mask-active');
+        });
+
+        worksItems.find('a').on('focus', function(e){
+            worksItems.removeClass('mask-active');
+            $(this).parents('.item-mask').addClass('mask-active');
         });
 
     }
@@ -72,7 +88,8 @@ var Application = function(){
         testStart:testStart,
         navigationToggle:navigationToggle,
         experienceTabs:experienceTabs,
-        accessibleClick:accessibleClick
+        accessibleClick:accessibleClick,
+        worksMask:worksMask
     }
 };
 
@@ -83,4 +100,5 @@ $(function(){
     app.navigationToggle();
     app.experienceTabs();
     app.accessibleClick();
+    app.worksMask();
 });

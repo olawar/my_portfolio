@@ -4,21 +4,25 @@
 	margin: 3rem auto 2rem;
 	padding-left: 0;
 	li {
+		@extend h3;
 		display: inline-block;
-		cursor: pointer;
+		color: $darkSecondary;
 	}
 }
 
 .exp-title {
-	@extend h3;
-	color: $dark;
-	&:hover {
-		color: $salmon;
+	color: $darkSecondary;
+	transition: all .3s ease-in-out;
+	&:hover,
+	&:focus {
+		color: $contrastSecondary;
+		text-decoration: underline;
+		outline: none !important;
 	}
 }
 
 .exp-title-active {
-	color: $salmon;
+	color: $contrastSecondary;
 }
 
 .experience-section-active {
@@ -26,22 +30,35 @@
 }
 
 .exp {
-	margin-top: 5rem;
+	margin-top: 3rem;
+
+	a:focus {
+		.exp-logo {
+			transform: scale(1.2);
+			cursor: pointer;
+		}
+	}
 }
 
 .exp-logo {
 	margin-left: 10%;
-	width: 9rem;
-	height: 9rem;
+	width: 8.5rem;
+	height: 8.5rem;
 	display: block;
 	box-sizing: border-box;
-	border: 1px dotted $salmon;
+	//border: 1px dotted $darkSecondary;
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
+	transition: all .3s ease-in-out;
 	&:hover {
 		transform: scale(1.2);
 		cursor: pointer;
+	}
+
+	@media screen and (max-width: 1200px){
+		width: 7rem;
+		height: 7rem;
 	}
 }
 
@@ -49,9 +66,9 @@
 	.exp-dates {
 		font-size: 1rem;
 	}
-    h5 {
-    	font-size: 1.5rem;
-    	color: $salmon;
+    h4 {
+    	font-size: 1.25rem;
+    	color: $contrastSecondary;
     	font-weight: 600;
 
 			@media screen and (min-width: 768px) and (max-width: 991px) {
@@ -65,8 +82,13 @@
 	}
 }
 
+.exp-list {
+	list-style-type: square;
+	padding-left: 1.25rem;
+}
+
 .efigence {
-	background-image: url('../images/efigence_logo.gif');
+	background-image: url('../images/efigence_logo.png');
 	background-size: 80%;
 }
 

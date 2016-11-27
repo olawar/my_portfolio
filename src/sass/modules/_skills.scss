@@ -1,5 +1,12 @@
+.skills-items {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .skills-title {
 	margin: 2.5rem auto;
+	color: $darkTertiary;
 
 	@media screen and (max-width: 767px){
 		margin: 2.5rem auto 4.5rem;
@@ -10,10 +17,13 @@
 	}
 }
 
+.skills-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
 .skill-block {
-	height: 8rem;
-	box-sizing: border-box;
-	width: 7rem;
+	margin: 1rem auto;
 	position: relative;
 	p {
 		font-size: 1rem;
@@ -25,22 +35,9 @@
 	}
 }
 
-.right {
-	margin-left: calc(100% - 7rem);
-}
-
-.left {
-	margin-right: calc(100% - 7rem);
-}
-
-.center {
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .skill {
-	width: 5rem;
-	height: 5rem;
+	width: 4rem;
+	height: 4rem;
 	margin: 0 auto 0.5rem;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -52,7 +49,7 @@
 	text-align: center;
 	font-size: 1.25rem;
 	span {
-		color: $salmon;
+		color: $contrast;
 	}
 }
 
@@ -92,6 +89,10 @@
 	background-image: url('../images/PS.png');
 }
 
-.susy {
-	background-image: url('../images/SUSY.png');
+.foundation {
+	background-image: url('../images/yeti.png');
+}
+
+.angular {
+	background-image: url('../images/angular.png');
 }

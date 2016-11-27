@@ -1,6 +1,6 @@
 .full-height {
 	height: 100%;
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 991px) {
 		height: auto;
 	}
 }
@@ -22,29 +22,33 @@
 }
 
 .intro-box {
-	display: block;
 	box-sizing: border-box;
-	padding-top: 20%;
 	padding-left: 8%;
-	padding-right: 6%;
-	padding-bottom: 5%;
+	padding-right: 4%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	position: relative;
 	@media screen and (min-width: 768px) and (max-width: 991px) {
 		padding-left: 2%;
 		padding-right: 3%;
-		padding-top: 40%;
+		padding-top: 10%;
+		padding-bottom: 5%;
 	}
 
 	@media screen and (min-width: 768px) and (max-width: 1020px) and (min-height: 600px){
-    padding-top: 25%;
-  }
+        padding-top: 10%;
+		padding-bottom: 5%;
+    }
 
 	@media screen and (min-width: 420px) and (max-width: 767px){
 		padding-top: 10%;
+		padding-bottom: 5%;
 	}
 
 	@media screen and (min-width: 500px) and (max-width: 767px) and (min-height: 600px){
 		padding-top: 15%;
+		padding-bottom: 5%;
 	}
 }
 
@@ -56,7 +60,7 @@
 	height: 100%;
 	display: block;
 	position: relative;
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 768px) {
 		height: auto;
 	}
 }
@@ -66,8 +70,8 @@
 }
 
 [class*="-items"]:not(.works-items) {
-	padding-top: 4rem;
-	padding-bottom: 4rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 /* Accessibility */
@@ -78,14 +82,15 @@
 }
 .skiplinks a {
 	display: inline-block;
-	padding: 16px;
-	border: 3px solid orange;
+	padding: 1.5rem;
+	border: 3px solid $contrast;
     background-color: #fff;
 	position: absolute;
 	left: 0;
 	top: -1000px;
 	width: 250px;
 	z-index: 2000;
+	font-size: 2rem;
 }
 .skiplinks a:focus {
 	top: 0;

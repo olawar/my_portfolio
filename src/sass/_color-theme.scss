@@ -1,27 +1,27 @@
-$pink: #CDB7C2;
-$taupe: #807178;
-$salmon: #CC6475;
-$royal: #803E49;
-$dark: #333333;
-$light: #CCCCCC;
+$contrastSecondary: #CE2000;
+$darkSecondary: #374573;
+$contrast: #F14020;
+$darkTertiary: #32204F;
+$dark: #030b28;
+$light: #D9D9D9;
 
-.pink {
-  background-color: $pink;
+.contrast-secondary {
+  background-color: $contrastSecondary;
   color: $dark;
 }
 
-.taupe {
-  background-color: $taupe;
+.dark-secondary {
+  background-color: $darkSecondary;
   color: $light;
 }
 
-.salmon {
-  background-color: $salmon;
+.contrast {
+  background-color: $contrast;
   color: $light;
 }
 
-.royal {
-  background-color: $royal;
+.dark-tertiary {
+  background-color: $darkTertiary;
   color: $light;
 }
 
@@ -36,6 +36,6 @@ $light: #CCCCCC;
 }
 
 .lighter {
-  background-color: lighten($light, 18%);
+  background-color: lighten($light, 10%);
   color: $dark;
 }

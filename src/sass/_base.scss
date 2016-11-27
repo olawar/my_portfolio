@@ -5,33 +5,31 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: #fff;
   color: $dark;
-  font-size: 1.5vh;
+  font-size: 14px;
 
-  //mobile fix
   @media screen and (max-width: 419px){
-    font-size: 10px;
+    font-size: 12px;
   }
 
   @media screen and (min-width: 420px) and (max-width: 767px){
     //font-size: 2.5vh;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1020px) and (min-height: 600px){
-    font-size: 1.75vh;
+    font-size: 16px;
   }
 
   @media screen and (min-width: 500px) and (max-width: 767px) and (min-height: 600px){
-    font-size: 1.25vh;
+    font-size: 16px;
   }
 }
 
-h1 {
+h1, .h1 {
   color: inherit;
   font-family: 'Raleway Dots', 'Arial', sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
 
-  //mobile fix
   @media screen and (max-width: 419px){
     font-size: 3.5rem;
   }
@@ -41,20 +39,20 @@ h1 {
   }
 }
 
-h2 {
+h2, .h2 {
   color: inherit;
   font-family: 'Raleway', 'Arial', sans-serif;
-  font-size: 3rem;
+  font-size: 2.75rem;
   @media screen and (min-width: 768px) and (max-width: 991px) {
     font-size: 2.25rem;
   }
 }
 
-h3 {
+h3, .h3 {
   font-family: 'Raleway', 'Arial', sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: $salmon;
+  color: $contrast;
   text-align: center;
 
   @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -62,7 +60,7 @@ h3 {
   }
 }
 
-h4 {
+h4, .h4 {
   color: inherit;
   font-family: 'Raleway', 'Arial', sans-serif;
   font-size: 1.5rem;
@@ -77,9 +75,17 @@ p {
 
 a {
   text-decoration: none;
-  color: $salmon;
+  color: $contrast;
+  transition: all .3s ease-in-out;
   &:hover {
-    color: $pink;
+    color: $contrastSecondary;
+    text-decoration: underline;
+  }
+
+  &:focus:not(:hover) {
+    outline: 2px solid $contrast;
+    color: $contrast;
+    text-decoration: none;
   }
 }
 
