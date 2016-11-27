@@ -70,38 +70,23 @@
 	padding-bottom: 4rem;
 }
 
+/* Accessibility */
 
-.pink {
-	background-color: $pink;
-	color: $dark;
+.skiplinks {
+	list-style: none;
+    margin: 0;
 }
-
-.taupe {
-	background-color: $taupe;
-	color: $light;
+.skiplinks a {
+	display: inline-block;
+	padding: 16px;
+	border: 3px solid orange;
+    background-color: #fff;
+	position: absolute;
+	left: 0;
+	top: -1000px;
+	width: 250px;
+	z-index: 2000;
 }
-
-.salmon {
-	background-color: $salmon;
-	color: $light;
-}
-
-.royal {
-	background-color: $royal;
-	color: $light;
-}
-
-.dark {
-	background-color: $dark;
-	color: $light;
-}
-
-.light {
-	background-color: $light;
-	color: $dark;
-}
-
-.lighter {
-	background-color: lighten($light, 18%);
-	color: $dark;
+.skiplinks a:focus {
+	top: 0;
 }

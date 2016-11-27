@@ -1,0 +1,41 @@
+$pink: #CDB7C2;
+$taupe: #807178;
+$salmon: #CC6475;
+$royal: #803E49;
+$dark: #333333;
+$light: #CCCCCC;
+
+.pink {
+  background-color: $pink;
+  color: $dark;
+}
+
+.taupe {
+  background-color: $taupe;
+  color: $light;
+}
+
+.salmon {
+  background-color: $salmon;
+  color: $light;
+}
+
+.royal {
+  background-color: $royal;
+  color: $light;
+}
+
+.dark {
+  background-color: $dark;
+  color: $light;
+}
+
+.light {
+  background-color: $light;
+  color: $dark;
+}
+
+.lighter {
+  background-color: lighten($light, 18%);
+  color: $dark;
+}

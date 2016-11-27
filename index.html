@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ola Warzecha Front-end Developer Portfolio</title>
+    <title>Ola Warzecha's Front-end Developer Portfolio</title>
 
     <!-- Bootstrap -->
     <link href='libraries/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-    <!-- Material Design -->
+    <!-- Material Design Icons -->
     <link href='libraries/mdi/css/materialdesignicons.css' rel='stylesheet' type='text/css'>
-    <!-- Czcionki -->
+    <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway+Dots&subset=latin-ext' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <!-- mój CSS-->
+    <!-- My Styles -->
     <link rel='stylesheet' href='dist/styles.css'>
 
     <!-- jQuery-->
     <script src="libraries/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src='libraries/bootstrap/dist/js/bootstrap.min.js'></script>
-    <!-- mój skrypt-->
+    <!-- My Scripts -->
     <script src="dist/scripts.js"></script>
 
     <!-- favicon -->
@@ -46,12 +46,20 @@
 </head>
 <body>
 
+    <ul class="skiplinks">
+        <li><a href="#introduction">home</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#works">works</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+
     <nav class="navigation-handy">
         <div class="navigation-bubble" tabindex="0">
+            <h2 class="for-sr">Page navigation</h2>
             <span class="navigation-state"></span>
         </div>
         <div class="navigation-wrapper hidden">
-            <h2 class="hidden">Page navigation</h2>
             <ul class="navigation-main">
                 <li><a href="#introduction">home</a></li>
                 <li><a href="#experience">experience</a></li>
@@ -61,9 +69,9 @@
             </ul>
             <hr>
             <ul class="navigation-social">
-                <li><a href="https://github.com/olawar" title="My GitHub profile"><i class="mdi mdi-github-box" aria-hidden="true"></i><span class="invisible">My GitHub profile</span></a></li>
-                <li><a href="https://linkedin.com/in/awarzecha" title="My LinkedIn profile"><i class="mdi mdi-linkedin-box" aria-hidden="true"></i><span class="invisible">My LinkedIn profile</span></a></li>
-                <li><a href="https://twitter.com/ola_war" title="My Twitter profile"><i class="mdi mdi-twitter-box" aria-hidden="true"></i><span class="invisible">My Twitter profile</span></a></li>
+                <li><a href="https://github.com/olawar" title="My GitHub profile"><i class="mdi mdi-github-box" aria-hidden="true"></i><span class="for-sr">My GitHub profile</span></a></li>
+                <li><a href="https://linkedin.com/in/awarzecha" title="My LinkedIn profile"><i class="mdi mdi-linkedin-box" aria-hidden="true"></i><span class="for-sr">My LinkedIn profile</span></a></li>
+                <li><a href="https://twitter.com/ola_war" title="My Twitter profile"><i class="mdi mdi-twitter-box" aria-hidden="true"></i><span class="for-sr">My Twitter profile</span></a></li>
             </ul>
         </div>
     </nav>
@@ -103,7 +111,7 @@
                     <p>working for tech companies inspired me to become a front-end developer</p>
                 </header>
 
-                <div class="experience-items full-height col-xs-12 col-sm-8 col-md-6 col-lg-6">
+                <div class="experience-items full-height overflow-scroll col-xs-12 col-sm-8 col-md-6 col-lg-6">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <ul class="experience-navigation">
@@ -114,109 +122,142 @@
                         </div>
                     </div>
 
-                    <section class="experience-coding experience-section experience-section-active">
-                        <h3 class="hidden">Coding</h3>
+                    <section class="experience-coding experience-section experience-section-active" aria-labelledby="controller-c" id="content-c">
+                        <h3 class="for-sr">Coding</h3>
 
-                        <article class="row exp" aria-labelledby="controller-c" id="content-c">
+                        <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.efigence.com" title="Efigence"><div class="exp-logo efigence"><span class="invisible">Efigence</span></div></a>
+                                <a href="http://www.efigence.com" title="Efigence"><div class="exp-logo efigence"><span class="for-sr">Efigence</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
-                                <p class="exp-dates">03 &#124; 2016 &#45; present</p>
-                                <h5>junior front-end developer</h5>
-                                <p>WCAG 2.0 - adapting web pages to accessibility guidelines</p>
+                                <p class="exp-dates">09 &#124; 2016 &#45; present</p>
+                                <h4>front-end developer</h4>
+                                <ul class="exp-list">
+                                    <li>enhancement &amp; maintenance of a corporate AngularJS app</li>
+                                    <li>accessibility specialist &#124; workshops during company's bootcamps and multi-department meetings</li>
+                                </ul>
                             </div>
                         </article>
 
-                        <article class="row exp" aria-labelledby="controller-pr" id="content-pr">
+
+                        <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.os3.pl" title="Ostrzy"><div class="exp-logo os3"><span class="invisible">OS3</span></div></a>
+                                <a href="http://www.efigence.com" title="Efigence"><div class="exp-logo efigence"><span class="for-sr">Efigence</span></div></a>
+                            </div>
+                            <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
+                                <p class="exp-dates">03 &#124; 2016 &#45; 09 &#124; 2016</p>
+                                <h4>junior front-end developer</h4>
+                                <ul class="exp-list">
+                                    <li>WCAG 2.0 - adapting web pages to accessibility guidelines</li>
+                                    <li>co-development of a large corporate portal, landing pages, e-mailings</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="row exp">
+                            <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
+                                <a href="http://www.os3.pl" title="Ostrzy"><div class="exp-logo os3"><span class="for-sr">OS3</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">01 &#124; 2016 &#45; 03 &#124; 2016</p>
-                                <h5>junior web developer &#124; internship</h5>
-                                <p>PSD 2 HTML, e-mailings</p>
-                                <p>RWD: adapting 'desktop' pages to mobile displays</p>
-                                <p>introduction to BEM and SMACSS</p>
+                                <h4>junior web developer &#124; internship</h4>
+                                <ul class="exp-list">
+                                    <li>PSD 2 HTML, e-mailings</li>
+                                    <li>RWD: adapting 'desktop' pages to mobile displays</li>
+                                    <li>introduction to BEM and SMACSS</li>
+                                </ul>
                             </div>
                         </article>
 
-                        <article class="row exp" aria-labelledby="controller-e" id="content-e">
+                        <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.coderslab.pl" title="Coders Lab"><div class="exp-logo coderslab"><span class="invisible">Coders Lab</span></div></a>
+                                <a href="http://www.coderslab.pl" title="Coders Lab"><div class="exp-logo coderslab"><span class="for-sr">Coders Lab</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">10 &#124; 2015</p>
-                                <h5>student</h5>
-                                <p>intensive front-end programming course</p>
-                                <p>main focus: HTML5, CSS3, Sass, JavaScript, jQuery</p>
+                                <h4>student</h4>
+                                <ul class="exp-list">
+                                    <li>intensive front-end bootcamp</li>
+                                    <li>main focus: HTML5, CSS3, Sass, JavaScript, jQuery</li>
+                                </ul>
                             </div>
                         </article>
                     </section>
 
-                    <section class="experience-communications experience-section hidden">
+                    <section class="experience-communications experience-section hidden" aria-labelledby="controller-pr" id="content-pr">
                         <h3 class="hidden">Communications</h3>
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.hkstrategies.pl" title="Hill and Knowlton Strategies"><div class="exp-logo hk"><span class="invisible">Hill and Knowlton Strategies</span></div></a>
+                                <a href="http://www.hkstrategies.pl" title="Hill and Knowlton Strategies"><div class="exp-logo hk"><span class="for-sr">Hill and Knowlton Strategies</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">03 &#124; 2013 &#45; 12 &#124; 2015</p>
-                                <h5>senior associate &#124; associate</h5>
-                                <p>team, project &amp; account management, communication strategy, media relations, content marketing</p>
-                                <p>clients: Microsoft, ING Bank Śląski, Philips Lighting, Panasonic</p>
+                                <h4>senior associate &#124; associate</h4>
+                                <ul class="exp-list">
+                                    <li>team, project &amp; account management, communication strategy, media relations, content marketing</li>
+                                    <li>clients: Microsoft, <span lang="pl">ING Bank Śląski</span>, Philips Lighting, Panasonic</li>
+                                </ul>
                             </div>
                         </article>
 
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.havaspr.pl" title="Havas PR Warsaw wcześniej Euro RSCG Sensors"><div class="exp-logo havas"><span class="invisible">Havas PR Warsaw</span></span></div></a>
+                                <a href="http://www.havaspr.pl" title="Havas PR Warsaw wcześniej Euro RSCG Sensors"><div class="exp-logo havas"><span class="for-sr">Havas PR Warsaw</span></span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">05 &#124; 2011 &#45; 01 &#124; 2012</p>
-                                <h5>consultant</h5>
-                                <p>media relations, product seeding, media events</p>
-                                <p>clients: Samsung, Orange</p>
+                                <h4>consultant</h4>
+                                <ul class="exp-list">
+                                    <li>media relations, product seeding, media events</li>
+                                    <li>clients: Samsung, Orange</li>
+                                </ul>
                             </div>
                         </article>
 
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.neuron.pl" title="Neuron Agencja PR"><div class="exp-logo neuron"><span class="invisible">Neuron Agencja PR</span></div></a>
+                                <a href="http://www.neuron.pl" title="Neuron Agencja PR"><div class="exp-logo neuron"><span class="for-sr" lang="pl">Neuron Agencja PR</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
                                 <p class="exp-dates">01 &#124; 2008 &#45; 01 &#124; 2011</p>
-                                <h5>senior account executive &#124; account executive</h5>
-                                <p>media relations, media events, social media</p>
-                                <p>clients: Netia, Acronis, Icebreaker</p>
+                                <h4>senior account executive &#124; account executive</h4>
+                                <ul class="exp-list">
+                                    <li>media relations, media events, social media</li>
+                                    <li>clients: Netia, Acronis, Icebreaker</li>
+                                </ul>
                             </div>
                         </article>
                     </section>
 
-                    <section class="experience-education experience-section hidden">
+                    <section class="experience-education experience-section hidden" aria-labelledby="controller-e" id="content-e">
                         <h3 class="hidden">Education</h3>
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.uj.edu.pl" title="Uniwersytet Jagielloński"><div class="exp-logo uj"><span class="invisible">Uniwersytet Jagielloński</span></div></a>
+                                <a href="http://www.uj.edu.pl" title="Uniwersytet Jagielloński"><div class="exp-logo uj"><span class="for-sr" lang="pl">Uniwersytet Jagielloński</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
-                                <h5>archaeology &#124; MA</h5>
-                                <p>I wrote my master's thesis in LaTeX</p>
-                                <p>technical illustrator</p>
-                                <p>excavations in Poland, Italy, Ukraine and Montenegro</p>
+                                <h4>archaeology &#124; MA</h4>
+                                <ul class="exp-list">
+                                    <li>I wrote my master's thesis in LaTeX</li>
+                                    <li>technical illustrator</li>
+                                    <li>excavations in Poland, Italy, Ukraine and Montenegro</li>
+                                </ul>
                             </div>
                         </article>
 
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
-                                <a href="http://www.nowodworek.krakow.pl" title="I Liceum Ogólnokształcące w Krakowie"><div class="exp-logo nowodworek"><span class="invisible">I Liceum Ogólnokształcące w Krakowie</span></div></a>
+                                <a href="http://www.nowodworek.krakow.pl" title="I Liceum Ogólnokształcące w Krakowie"><div class="exp-logo nowodworek"><span class="for-sr" lang="pl">I Liceum Ogólnokształcące w Krakowie</span></div></a>
                             </div>
                             <div class="exp-description col-xs-8 col-sm-8 col-md-9 col-lg-9">
-                                <h5>bilingual class with english</h5>
-                                <p>CAE &amp; CPE</p>
+                                <h4>bilingual class with english</h4>
+                                <ul class="exp-list">
+                                    <li>CAE &amp; CPE</li>
+                                </ul>
                             </div>
                         </article>
                     </section>
+
                 </div>
             </div>
         </div>
@@ -228,47 +269,49 @@
 
                 <header class="skills-intro intro-box royal full-height no-gutter col-xs-12 col-sm-4 col-md-6 col-lg-6">
                     <h2>my current skills</h2>
-                    <p>what I'd like to learn soon: more on accessibility, UX and JS frameworks such as AngularJS or ReactJS</p>
+                    <p>my goals for the nearest future: more experience with AngularJS, getting to know ReactJS</p>
                 </header>
 
-                <section class="skills-items full-height lighter no-gutter col-xs-12 col-sm-8 col-md-6 col-lg-6">
+                <section class="skills-items full-height overflow-scroll lighter no-gutter col-xs-12 col-sm-8 col-md-6 col-lg-6">
                     <div class="row no-gutter">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h3 class="skills-title">I feel quite confident in:</h3>
+                            <h3 class="skills-title">My everyday stack</h3>
                         </div>
 
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <div class="skill-block right">
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="skill-block center">
                                 <div class="skill html">
                                 </div>
                                 <p>HTML5</p>
                             </div>
                         </div>
 
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <div class="skill-block left">
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="skill-block center">
                                 <div class="skill css">
                                 </div>
                                 <p>CSS3</p>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row no-gutter">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h3 class="skills-title">I have solid basics (which I systematically develop):</h3>
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="skill-block center">
+                                <div class="skill sass">
+                                </div>
+                                <p>Sass</p>
+                            </div>
                         </div>
 
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <div class="skill-block right">
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="skill-block center">
                                 <div class="skill javascript">
                                 </div>
                                 <p>JavaScript</p>
                             </div>
                         </div>
 
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <div class="skill-block left">
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="skill-block center">
                                 <div class="skill jquery">
                                 </div>
                                 <p>jQuery</p>
@@ -278,18 +321,10 @@
 
                     <div class="row no-gutter">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <h3 class="skills-title">I use on a daily basis:</h3>
+                            <h3 class="skills-title">my tools:</h3>
                         </div>
 
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="skill-block right">
-                                <div class="skill sass">
-                                </div>
-                                <p>Sass</p>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
                             <div class="skill-block center">
                                 <div class="skill gulp">
                                 </div>
@@ -297,42 +332,53 @@
                             </div>
                         </div>
 
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="skill-block left">
-                                <div class="skill bootstrap">
-                                </div>
-                                <p>Bootstrap</p>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="skill-block right">
-                                <div class="skill susy">
-                                </div>
-                                <p>Susy</p>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
                             <div class="skill-block center">
-                                <div class="skill photoshop">
-                                </div>
-                                <p>Adobe Photoshop</p>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="skill-block left">
                                 <div class="skill git">
                                 </div>
                                 <p>Git</p>
                             </div>
                         </div>
 
-                        <p class="skills-add col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            ... and I have come across <span>AJAX</span>, <span>SVN</span> and a very little bit of <span>Wordpress</span>
-                        </p>
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="skill-block center">
+                                <div class="skill susy">
+                                </div>
+                                <p>Foundation</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="skill-block center">
+                                <div class="skill bootstrap">
+                                </div>
+                                <p>Bootstrap</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+                            <div class="skill-block center">
+                                <div class="skill photoshop">
+                                </div>
+                                <p>Adobe Photoshop</p>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="row no-gutter">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3 class="skills-title">I'm currently learning:</h3>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="skill-block center">
+                                <div class="skill photoshop">
+                                </div>
+                                <p>AngularJS</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
             </div>
         </div>
@@ -344,20 +390,77 @@
 
                 <header class="works-intro full-height no-gutter intro-box dark text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
                     <h2>my portfolio</h2>
-                    <p>projects developed during my free time and the course at Coder's Lab</p>
+                    <p>projects developed during my free time and Coders Lab bootcamp</p>
                 </header>
 
                 <div class="works-items full-height overflow-scroll col-xs-12 col-sm-8 col-md-6 col-lg-6">
                     <div class="row">
+
                         <div class="work-item autoreplies-creator no-gutter col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="item-mask" onclick="">
                                 <div class="mask-content">
                                     <span>
-                                        the autoreplies creator - my own DOM manipulation project
+                                        accessibility - my materials for workshops
                                     </span>
                                     <br>
                                     <span>
-                                        view it on <a href="https://github.com/olawar/autoreplies_creator">GitHub</a> or <a href="http://warzecha.org/ola/autoreplies_creator/">here</a>
+                                        view it on <a href="https://github.com/olawar/accessibility-workshop">GitHub</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="work-item autoreplies-creator no-gutter col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="item-mask" onclick="">
+                                <div class="mask-content">
+                                    <span>
+                                        number to price converter
+                                    </span>
+                                    <br>
+                                    <span>
+                                         view it on <a href="https://github.com/olawar/number-to-word">GitHub</a> or <a href="http://warzecha.org/ola/numbertoword/">use it here</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="work-item autoreplies-creator no-gutter col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="item-mask" onclick="">
+                                <div class="mask-content">
+                                    <span>
+                                        JS games - rock, paper, scissors
+                                    </span>
+                                    <br>
+                                    <span>
+                                         view it on <a href="https://github.com/olawar/rock-paper-scissors">GitHub</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="work-item autoreplies-creator no-gutter col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="item-mask" onclick="">
+                                <div class="mask-content">
+                                    <span>
+                                        JS games - memory
+                                    </span>
+                                    <br>
+                                    <span>
+                                         view it on <a href=https://github.com/olawar/memory_game">GitHub</a> or <a href="http://warzecha.org/ola/memory/">play it here</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="work-item autoreplies-creator no-gutter col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="item-mask" onclick="">
+                                <div class="mask-content">
+                                    <span>
+                                        the autoreplies creator
+                                    </span>
+                                    <br>
+                                    <span>
+                                        view it on <a href="https://github.com/olawar/autoreplies_creator">GitHub</a> or <a href="http://warzecha.org/ola/autoreplies_creator/">use it here</a>
                                     </span>
                                 </div>
                             </div>
@@ -367,7 +470,7 @@
                             <div class="item-mask" onclick="">
                                 <div class="mask-content">
                                     <span>
-                                        my previous responsive portfolio page from Coder's Lab workshops built on a grid
+                                        my previous responsive portfolio page from Coder's Lab workshops built on my own grid
                                     </span>
                                     <br>
                                     <span>
@@ -432,7 +535,7 @@
 
                 <header class="contact-intro full-height no-gutter intro-box taupe text-left col-xs-12 col-sm-4 col-md-6 col-lg-6">
                     <h2>I'm looking forward to hearing from you</h2>
-                    <p>want to see more of my work, hire me or you're looking for another board games player? just message me!</p>
+                    <p>want to know more about my commercial experience, hire me or you're looking for another board games player? just message me!</p>
                 </header>
 
                 <div class="contact-items lighter full-height no-gutter col-xs-12 col-sm-8 col-md-6 col-lg-6">
@@ -441,19 +544,19 @@
                             <h3>you're most likely to hear from me also about:</h3>
                         </div>
 
-                        <div class="hobby col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                        <div class="hobby col-xs-6 col-sm-6 col-md-4 col-lg-4">
                             <div class="hobby-image games">
                             </div>
                             <p>board games</p>
                         </div>
 
-                        <div class="hobby col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                        <div class="hobby col-xs-6 col-sm-6 col-md-4 col-lg-4">
                             <div class="hobby-image cats">
                             </div>
                             <p>my cats</p>
                         </div>
 
-                        <div class="hobby col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="hobby col-xs-12 col-sm-12 col-md-4 col-lg-4">
                             <div class="hobby-image toys">
                             </div>
                             <p>designer toys</p>
@@ -467,10 +570,10 @@
 
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <ul class="contact-methods">
-                                <li><a href="mailto:&#119;&#097;&#114;&#122;&#101;&#099;&#104;&#097;&#046;&#111;&#108;&#097;+&#112;&#102;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" title="&#119;&#097;&#114;&#122;&#101;&#099;&#104;&#097;&#046;&#111;&#108;&#097;+&#112;&#102;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><i class="mdi mdi-email" aria-hidden="true"></i><span class="invisible">My email address</span></a></li>
-                                <li><a href="https://github.com/olawar" title="My GitHub profile"><i class="mdi mdi-github-box" aria-hidden="true"></i><span class="invisible">My GitHub profile</span></a></li>
-                                <li><a href="https://linkedin.com/in/awarzecha" title="My LinkedIn profile"><i class="mdi mdi-linkedin-box" aria-hidden="true"></i><span class="invisible">My LinkedIn profile</span></a></li>
-                                <li><a href="https://twitter.com/ola_war" title="My Twitter profile"><i class="mdi mdi-twitter-box" aria-hidden="true"></i><span class="invisible">My Twitter profile</span></a></li>
+                                <li><a href="mailto:&#119;&#097;&#114;&#122;&#101;&#099;&#104;&#097;&#046;&#111;&#108;&#097;+&#112;&#102;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" title="&#119;&#097;&#114;&#122;&#101;&#099;&#104;&#097;&#046;&#111;&#108;&#097;+&#112;&#102;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"><i class="mdi mdi-email" aria-hidden="true"></i><span class="for-sr">My email address</span></a></li>
+                                <li><a href="https://github.com/olawar" title="My GitHub profile"><i class="mdi mdi-github-box" aria-hidden="true"></i><span class="for-sr">My GitHub profile</span></a></li>
+                                <li><a href="https://linkedin.com/in/awarzecha" title="My LinkedIn profile"><i class="mdi mdi-linkedin-box" aria-hidden="true"></i><span class="for-sr">My LinkedIn profile</span></a></li>
+                                <li><a href="https://twitter.com/ola_war" title="My Twitter profile"><i class="mdi mdi-twitter-box" aria-hidden="true"></i><span class="for-sr">My Twitter profile</span></a></li>
                             </ul>
                         </div>
 
