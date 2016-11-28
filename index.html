@@ -121,15 +121,15 @@
                 <div class="experience-items full-height overflow-scroll col-xs-12 col-sm-12 col-md-7 col-lg-6">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <ul class="experience-navigation">
-                                <li><a href="" class="exp-title exp-title-coding exp-title-active" tabindex="0" id="controller-c" aria-controls="content-c">coding</a> &#124;</li>
-                                <li><a href="" class="exp-title exp-title-communications" tabindex="0" id="controller-pr" aria-controls="content-pr">communications</a> &#124;</li>
-                                <li><a href="" class="exp-title exp-title-education" tabindex="0" id="controller-e" aria-controls="content-e">education</a></li>
+                            <ul class="experience-navigation" role="tablist">
+                                <li><a href="" class="exp-title exp-title-coding exp-title-active" tabindex="0" id="controller-c" aria-controls="content-c" role="tab">coding</a> &#124;</li>
+                                <li><a href="" class="exp-title exp-title-communications" tabindex="0" id="controller-pr" aria-controls="content-pr" role="tab">communications</a> &#124;</li>
+                                <li><a href="" class="exp-title exp-title-education" tabindex="0" id="controller-e" aria-controls="content-e" role="tab">education</a></li>
                             </ul>
                         </div>
                     </div>
 
-                    <section class="experience-coding experience-section experience-section-active" aria-labelledby="controller-c" id="content-c">
+                    <section class="experience-coding experience-section experience-section-active" aria-labelledby="controller-c" id="content-c" role="tabpanel">
                         <h3 class="for-sr">Coding</h3>
 
                         <article class="row exp">
@@ -191,7 +191,7 @@
                         </article>
                     </section>
 
-                    <section class="experience-communications experience-section hidden" aria-labelledby="controller-pr" id="content-pr">
+                    <section class="experience-communications experience-section hidden" aria-labelledby="controller-pr" id="content-pr" role="tabpanel">
                         <h3 class="hidden">Communications</h3>
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
@@ -236,7 +236,7 @@
                         </article>
                     </section>
 
-                    <section class="experience-education experience-section hidden" aria-labelledby="controller-e" id="content-e">
+                    <section class="experience-education experience-section hidden" aria-labelledby="controller-e" id="content-e" role="tabpanel">
                         <h3 class="hidden">Education</h3>
                         <article class="row exp">
                             <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">

@@ -27,13 +27,18 @@
 
 .introduction-photo {
 	display: block;
-	width: 45vh;
-	height: 45vh;
+	width: 28rem;
+	height: 28rem;
 	border-radius: 50%;
 	margin: 0 auto 2rem;
 	background-image: url('../images/ola.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	@media screen and (min-width: 360px) and (max-width: 767px){
+		width: 18rem;
+		height: 18rem;
+		margin-top: 2rem;
+	}
 }
 
 .introduction-links {
